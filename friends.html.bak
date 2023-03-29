@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>MY FRIENDS</title>
+		
+		<style>
+			*{
+				padding:0px;
+				margin:0px;
+			}
+			.container{
+				display:flex;
+				height:100vh;
+				flex-direction:column;
+			}
+			.header{
+				display:flex;
+				width:100%;
+				height:80px;
+				z-index:1;
+				background-color:;
+				border-radius:0px 0px 10px 10px;
+				box-shadow:0px 0px 15px black;
+			}
+			.content{
+				width:100%;
+				height:100%;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+			}
+			ul{
+				width:60%;
+				height:100%;
+				display:flex;
+				align-items:center;
+				justify-content:space-evenly;
+				list-style:none;
+			}
+			.title{
+				width:40%;
+				height:100%;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			a{
+				text-decoration:none;
+				color:black;
+			}
+			.content-main{
+				width:auto;
+				height:400px;
+				background-color:;
+				display:flex;
+			}
+			.content-main::before{
+				content:'';
+				position:absolute;
+				bottom:5px;
+				width:900px;
+				height:50px;
+				background-color:#959595;
+				z-index:-1px;
+				border-radius:50%;
+				filter:blur(13px);
+				animation:qwe 1.5s ease-out forwards;
+			}
+			.content-main-picture{
+				width:300px;
+				height:400px;
+				background-color:#dbdbdb;
+				border-radius:10px 0px 0px 10px;
+				background-size:cover;
+			}
+			
+			@keyframes asd{
+			0%{width:0px;}
+			30%{width:0px;}
+			100%{width:600px;}
+			}
+			
+			@keyframes qwe{
+			0%{width:300px;}
+			30%{width:300px;}
+			100%{width:900px;}
+			}
+			
+			.content-main-description{
+				display:flex;
+				width:600px;
+				height:400px;
+				background-color:#eaeaea;
+				justify-content:center;
+				align-items:center;
+				animation:asd 1.5s ease-out forwards;
+				overflow-Y:scroll;
+				word-wrap:normal;
+				border-radius:0px 10px 10px 0px;
+				box-shadow:-10px 0px 20px #959595 inset;
+			}
+			
+			.content-main-description-sentence{
+				display:flex;
+				width:530px;
+				height:350px;
+				flex-direction:column;
+			}
+			
+			
+			.hover{
+				width:150px;
+				height:50px;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+				border-radius:10px;
+				box-shadow:0px 0px 8px #909090;
+			}
+			.hover:hover{
+				box-shadow:0px 0px 5px #a7a7a7 inset;
+				color:#5a5a5a;
+			}
+			.side-nav{
+				background-color:#eaeaea;
+				width:100px;
+				height:400px;
+				position:absolute;
+				left:0px;
+				display:flex;
+				flex-direction:column;
+				justify-content:space-evenly;
+				align-items:center;
+				border-radius:0px 30px 30px 0px;
+				border:0px solid #c8c8c8;
+				box-shadow:0px 0px 5px #a7a7a7 inset;
+			}
+			
+			.selection{
+				background-color:red;
+				width:50px;
+				height:50px;
+				border-radius:50%;
+				cursor:pointer;
+			}
+			.selection:nth-child(1)
+			{
+				background-image:url('aljhon.jpg');
+				background-size:cover;
+			}
+			.selection:nth-child(2)
+			{
+				background-image:url('francis.jpg');
+				background-size:cover;
+			}
+			.selection:nth-child(3)
+			{
+				background-image:url('arma.jpg');
+				background-size:cover;
+			}
+			.selection:nth-child(4)
+			{
+				background-image:url('mayor.jpg');
+				background-size:cover;
+			}
+			.selection:nth-child(5)
+			{
+				background-image:url('dan.jpg');
+				background-size:cover;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<div class="title"><a href="https://www.facebook.com/2pogiako7">My Friends</a></div>
+				<ul>
+					<li><a href="index.html" class="hover">About Me</a></li>
+					<li><a href="family.html" class="hover">My Family</a></li>
+					<li><a href="likes.html" class="hover">My Likes</a></li>
+					<li><a href="friends.html" class="hover">My Friends</a></li>
+					<li><a href="places.html" class="hover">My Place</a></li>
+			</header>
+			<div class="content">
+				<div class="side-nav">
+					<div class="selection" onclick="sis()" id="sis"></div>
+					<div class="selection" onclick="mam()" id="mam"></div>
+					<div class="selection" onclick="dad()" id="dad"></div>
+					<div class="selection" onclick="couz()" id="gran"></div>
+					<div class="selection" onclick="fish()" id="fish"></div>
+				</div>
+				<div class="content-main">
+					<div class="content-main-picture" id="picCont"></div>
+					<div class="content-main-description"><p class="content-main-description-sentence" id="textDes"></p><br></div>
+				</div>
+			</div>
+		</div>
+		<script>
+			
+			
+			function sis()
+			{
+				document.getElementById("textDes").innerHTML = "<h3>Aljhon Lopez</h3><br><br> I meet him in college and he is my classmate. we play mobile legends sometimes. lives in dinalupihan and sometimes he late in class. he doesn't like takoyaki just like I did. he has a long distance girlfriend.<br><br>He can play guitar. He is a hardworking student. He is an easygoing. He has a strong personality. A dream to become a pro athlete someday.<br><br>";
+				document.getElementById("picCont").style.backgroundImage = "url('aljhon.jpg')";
+			}
+			function mam()
+			{
+				document.getElementById("textDes").innerHTML = "<h3>Francis Daniel Genese</h3><br><br> I meet him in college and he is my classmate.we play mobile legends sometimes and talking in discord. he lives in limay. he like takoyaki just like me. he is a single just like me.<br><br>He can play calimba. He is a hardworking student. He goods at arts and designs. He has a strong personality. A dream to become a Programmer someday.<br><br>";
+				document.getElementById("picCont").style.backgroundImage = "url('francis.jpg')";
+			}
+			function dad()
+			{
+				document.getElementById("textDes").innerHTML = "<h3>Armabel Ramos</h3><br><br> I meet her in college and she is my classmate.I called her 'pinsan' though we're not blood related. she lives in limay. she like takoyaki just like me. she is a single just like me.<br><br>She has a hidden talent in singing. She is a hardworking student. She goods at Studying and korean language. She has a strong personality. A dream to learn more about Programming language someday.<br><br>";
+				document.getElementById("picCont").style.backgroundImage = "url('arma.jpg')";
+			}
+			function couz()
+			{
+				document.getElementById("textDes").innerHTML = "<h3>Johannes Andrei Aquino</h3><br><br> I meet him in college and he is my classmate in minor subjects. He is a former mayor in NW-1A. he lives in limay. he like takoyaki just like me. his relationship status is not yet confirmed.<br><br>He is good at dancing. He is a hardworking student. He goods at at helping onthers. He has a strong personality. A dream to had a fine job someday.<br><br>";
+				document.getElementById("picCont").style.backgroundImage = "url('mayor.jpg')";
+			}
+			function fish()
+			{
+				document.getElementById("textDes").innerHTML = "<h3>Daniela Ruth Ancos</h3><br><br> I meet her in college and she is my classmate. She is a cosplayer. She lives in Balanga near in BPSU main. She like anime just like me. her relationship status is not yet confirmed.<br><br>She is an approachable person. She is a hardworking student. She goods at supporting her friends. She has a strong personality. A dream to graduate someday.<br><br>";
+				document.getElementById("picCont").style.backgroundImage = "url('dan.jpg')";
+			}
+			
+		</script>
+	</body>
+</html>

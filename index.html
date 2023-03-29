@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>ABOUT ME</title>
+		
+		<style>
+			*{
+				padding:0px;
+				margin:0px;
+			}
+			.container{
+				display:flex;
+				height:100vh;
+				flex-direction:column;
+			}
+			.header{
+				display:flex;
+				width:100%;
+				height:80px;
+				z-index:1;
+				background-color:;
+				border-radius:0px 0px 10px 10px;
+				box-shadow:0px 0px 15px black;
+			}
+			.content{
+				width:100%;
+				height:100%;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+			}
+			ul{
+				width:60%;
+				height:100%;
+				display:flex;
+				align-items:center;
+				justify-content:space-evenly;
+				list-style:none;
+			}
+			.title{
+				width:40%;
+				height:100%;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			a{
+				text-decoration:none;
+				color:black;
+			}
+			.content-main{
+				width:auto;
+				height:400px;
+				background-color:;
+				display:flex;
+			}
+			.content-main::before{
+				content:'';
+				position:absolute;
+				bottom:5px;
+				width:900px;
+				height:50px;
+				background-color:#959595;
+				z-index:-1px;
+				border-radius:50%;
+				filter:blur(13px);
+				animation:qwe 1.5s ease-out forwards;
+			}
+			.content-main-picture{
+				width:300px;
+				height:400px;
+				background-image:url("me.jpg");
+				background-size:cover;
+				border-radius:10px 0px 0px 10px;
+			}
+			
+			@keyframes asd{
+			0%{width:0px;}
+			30%{width:0px;}
+			100%{width:600px;}
+			}
+			
+			@keyframes qwe{
+			0%{width:300px;}
+			30%{width:300px;}
+			100%{width:900px;}
+			}
+			
+			.content-main-description{
+				display:flex;
+				width:600px;
+				height:400px;
+				background-color:#eaeaea;
+				justify-content:center;
+				align-items:center;
+				animation:asd 1.5s ease-out forwards;
+				overflow-Y:scroll;
+				word-wrap:normal;
+				border-radius:0px 10px 10px 0px;
+				box-shadow:-10px 0px 20px #959595 inset;
+			}
+			
+			.content-main-description-sentence{
+				display:flex;
+				width:530px;
+				height:350px;
+				background-color:;
+			}
+			
+			
+			.hover{
+				width:150px;
+				height:50px;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+				border-radius:10px;
+				box-shadow:0px 0px 8px #909090;
+			}
+			.hover:hover{
+				box-shadow:0px 0px 5px #a7a7a7 inset;
+				color:#5a5a5a;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<div class="title"><a href="https://www.facebook.com/2pogiako7">About Me</a></div>
+				<ul>
+					<li><a href="index.html" class="hover">About Me</a></li>
+					<li><a href="family.html" class="hover">My Family</a></li>
+					<li><a href="likes.html" class="hover">My Likes</a></li>
+					<li><a href="friends.html" class="hover">My Friends</a></li>
+					<li><a href="places.html" class="hover">My Place</a></li>
+				</ul>
+			</header>
+			<div class="content">
+				<div class="content-main">
+					<div class="content-main-picture"></div>
+					<div class="content-main-description"><p class="content-main-description-sentence">
+					I am Leander P. Ochea, a freshman at the College of Information and Technology of BPSU Main Campus in Balanga City. My goal is to enhance my programming expertise to become the top web developer in the IT sector. I am willing to take risks and face challenges without worrying about the potential consequences. What matters most to me is that I learn from every mistake and difficulty that I encounter. I discuss ideas and interact with fellow programmers to gain knowledge on various applications and programming languages that will help me become an excellent developer. A quote that has transformed my life is "With great enthusiasm, the impossible becomes possible."<br/>
+					I relish gazing picturesque vistas in nature and pausing for a moment to appreciate the beauty of my surroundings. Capturing images of every scenery I come across and maintaining a collection of the natural wonders I have witnessed. It appears that among my family members, I am the only one who values even the slightest masterpiece of nature. Reflecting upon the sounds of cascading waterfalls, the aroma of forests and jungles, and the symmetrical patterns in leaves and flowers, the experience of being surrounded by these elements feels like the ultimate meditation. It is the most exceptional encounter of my life.<br/>
+					Sharing my life experiences throughout the years can aid in comprehending my way of life. During my younger years, I was a lively and humorous individual, much like my peers. We engaged in various games as internet games and social media were non-existent at the time. We spent ample time outdoors, playing in the streets and getting dirt on our clothes. Following a tiring day, my mother would scold me upon my return home.<br/>
+					I have encountered several issues in my life, most of which occurred in my early elmentary days. My classmates used to intimidate me. It greatly affected me and I shed tears as I felt flawed. However, I decided to confront them and ignore their actions since they were naive youngsters who were unaware of my past experiences. Furthermore, their actions taught me that nobody is perfect. I have forgiven them as I am not the kind of person to retaliate.<br/>
+					Challenges throughout my journey have been instrumental in my academic growth. Presently, I am motivated to pursue my aspirations with a strong sense of distinction and ingenuity in all my endeavors. Following the outbreak of the pandemic, my interest shifted towards graphic designing as I lacked knowledge on how to improve my situation. However, I persisted in networking and interacting with experienced individuals who helped me refine my skills in this field. Consequently, I received an overwhelming number of followers and admirers who appreciated my work.<br/>&nbsp;
+					</p></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

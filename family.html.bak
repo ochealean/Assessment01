@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>MY FAMILY</title>
+		
+		<style>
+			*{
+				padding:0px;
+				margin:0px;
+			}
+			.container{
+				display:flex;
+				height:100vh;
+				flex-direction:column;
+			}
+			.header{
+				display:flex;
+				width:100%;
+				height:80px;
+				z-index:1;
+				background-color:;
+				border-radius:0px 0px 10px 10px;
+				box-shadow:0px 0px 15px black;
+			}
+			.content{
+				width:100%;
+				height:100%;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+			}
+			ul{
+				width:60%;
+				height:100%;
+				display:flex;
+				align-items:center;
+				justify-content:space-evenly;
+				list-style:none;
+			}
+			.title{
+				width:40%;
+				height:100%;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			a{
+				text-decoration:none;
+				color:black;
+			}
+			.content-main{
+				width:auto;
+				height:400px;
+				background-color:;
+				display:flex;
+			}
+			.content-main::before{
+				content:'';
+				position:absolute;
+				bottom:5px;
+				width:900px;
+				height:50px;
+				background-color:#959595;
+				z-index:-1px;
+				border-radius:50%;
+				filter:blur(13px);
+				animation:qwe 1.5s ease-out forwards;
+			}
+			.content-main-picture{
+				width:300px;
+				height:400px;
+				background-color:#dbdbdb;
+				border-radius:10px 0px 0px 10px;
+				background-size:cover;
+			}
+			
+			@keyframes asd{
+			0%{width:0px;}
+			30%{width:0px;}
+			100%{width:600px;}
+			}
+			
+			@keyframes qwe{
+			0%{width:300px;}
+			30%{width:300px;}
+			100%{width:900px;}
+			}
+			
+			.content-main-description{
+				display:flex;
+				width:600px;
+				height:400px;
+				background-color:#eaeaea;
+				justify-content:center;
+				align-items:center;
+				animation:asd 1.5s ease-out forwards;
+				overflow-Y:scroll;
+				word-wrap:normal;
+				border-radius:0px 10px 10px 0px;
+				box-shadow:-10px 0px 20px #959595 inset;
+			}
+			
+			.content-main-description-sentence{
+				display:flex;
+				width:530px;
+				height:350px;
+				flex-direction:column;
+			}
+			
+			
+			.hover{
+				width:150px;
+				height:50px;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+				border-radius:10px;
+				box-shadow:0px 0px 8px #909090;
+			}
+			.hover:hover{
+				box-shadow:0px 0px 5px #a7a7a7 inset;
+				color:#5a5a5a;
+			}
+			.side-nav{
+				background-color:#eaeaea;
+				width:100px;
+				height:400px;
+				position:absolute;
+				left:0px;
+				display:flex;
+				flex-direction:column;
+				justify-content:space-evenly;
+				align-items:center;
+				border-radius:0px 30px 30px 0px;
+				border:0px solid #c8c8c8;
+				box-shadow:0px 0px 5px #a7a7a7 inset;
+			}
+			
+			.selection{
+				background-color:red;
+				width:50px;
+				height:50px;
+				border-radius:50%;
+				cursor:pointer;
+			}
+			.selection:nth-child(1)
+			{
+				background-image:url('sis.jpg');
+				background-size:cover;
+			}
+			.selection:nth-child(2)
+			{
+				background-image:url('mam.jpg');
+				background-size:cover;
+			}
+			.selection:nth-child(3)
+			{
+				background-image:url('dad.jpg');
+				background-size:cover;
+			}
+			.selection:nth-child(4)
+			{
+				background-image:url('couz.jpg');
+				background-size:cover;
+			}
+			.selection:nth-child(5)
+			{
+				background-image:url('fish.jpg');
+				background-size:cover;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<div class="title"><a href="https://www.facebook.com/2pogiako7">My Family</a></div>
+				<ul>
+					<li><a href="index.html" class="hover">About Me</a></li>
+					<li><a href="family.html" class="hover">My Family</a></li>
+					<li><a href="likes.html" class="hover">My Likes</a></li>
+					<li><a href="friends.html" class="hover">My Friends</a></li>
+					<li><a href="places.html" class="hover">My Place</a></li>
+			</header>
+			<div class="content">
+				<div class="side-nav">
+					<div class="selection" onclick="sis()" id="sis"></div>
+					<div class="selection" onclick="mam()" id="mam"></div>
+					<div class="selection" onclick="dad()" id="dad"></div>
+					<div class="selection" onclick="couz()" id="gran"></div>
+					<div class="selection" onclick="fish()" id="fish"></div>
+				</div>
+				<div class="content-main">
+					<div class="content-main-picture" id="picCont"></div>
+					<div class="content-main-description"><p class="content-main-description-sentence" id="textDes"></p></div>
+				</div>
+			</div>
+		</div>
+		<script>
+			
+			
+			function sis()
+			{
+				document.getElementById("textDes").innerHTML = "<h3>Shaynne Liezel P. Ochea(Sister)</h3><br><br>My sibling, Shaynne Liezel P. Ochea, is an extremely supportive sister. She consistently performs her duties, not solely for personal reasons, but to assist with household tasks. Additionally, she excels academically. She is a fundamental component that fortifies and reinforces the foundation of our familial ties. <br><br>She completed her ABM strand from the Saint Peter of Verona Academy Inc (SPVAI). Her next step is to enroll in the accounting program at BPSU Balanga Campus. Prior to taking exams, she regularly reviews her notes. Although she may encounter sleeplessness and anxiety, she perseveres in her studies. Fortunately, she has a supportive family.<br><br>We constantly have a fantastic time together as a family, laughing and sharing stories of our most embarrassing moments. Her presence brings us joy, especially during times of social difficulties. She is kind and welcoming to all, including those she has just met. The happiest moments of her life are when the entire family is gathered together, and it's evident in the way she radiates with happiness and contentment.";
+				document.getElementById("picCont").style.backgroundImage = "url('sis.jpg')";
+			}
+			function mam()
+			{
+				document.getElementById("textDes").innerHTML = "<h3>Racquel S. Pascua(Mother)</h3><br><br>My Mom was brought into this world in Bataan. She completed her studies at Tomas del Rosario College (TRC/Tdel). She possesses the ability to converse in Mandarin as she worked as a translator before. She was a beautiful lady during her younger years and even up to now. It was her duty to support her offspring. <br><br>During our childhood, our mother traveled abroad to earn a livelihood for the family. She worked in Taiwan for nearly ten years, gaining extensive overseas exposure. It is evident that she has encountered both favorable and unfavorable circumstances in her life. Being the only one in the family to work abroad, she has now returned to live with us.<br><br>My mom is a diligent caregiver who endeavors to simplify our lives. She's always ready to loan us money. She comprehends that we're experiencing a challenging time. Due to her limitless dedication, our entire family cherishes her. She's the finest mother we've ever had.";
+				document.getElementById("picCont").style.backgroundImage = "url('mam.jpg')";
+			}
+			function dad()
+			{
+				document.getElementById("textDes").innerHTML = "<h3>Louie C. Ochea(Father)</h3><br><br>My Dad was brought into this world in Batangas. He completed his studies at Bauan Technological College. He lives in Batangas now. He is finding job for our expenses. He was a welder before and had an opportunity to work overseas.<br><br>During our childhood, our father take care of us since our mother was in abroad to earn a livelihood for the family. He take care of us in almost 3 years before he give us to our grandmother to work too. It is evident that he has encountered both favorable and unfavorable circumstances in his life. His status now is still trying to find money for our <i>baon</i>.My Dad is a diligent caregiver who endeavors to simplify our lives. He's always ready to give us money if he has. He comprehends that we're need a money to sustain our study so he still looking for a job. Due to his limitless dedication to make his children to graduate. He's the finest Father we've ever had.";
+				document.getElementById("picCont").style.backgroundImage = "url('dad.jpg')";
+			}
+			function couz()
+			{
+				document.getElementById("textDes").innerHTML = "<h3>Rashieka Izel P. Joaquin(Cousin)</h3><br><br>My cousin that so much like a litter sister to me. She studying at SPVAI also alongside with my biological sister, Shaynne and keep trying of having a good grades due to her addition in online games. she looks like a little version of me when I was an elementary because that time I didn't even care about education. even when theres an upcoming exam she doesn't even care and bothered to review at the morning, she's just reviewing at night. That's the reason why her Mom scolded her everytime she doesn't review.<br><br>Her father is working in Canada. Her  Mother is working in her school at SPVAI. she always hungry and eating her week stock of foods within a day. she always addict in Ipad even taking a shower she's watching with her Ipad. but she is a wonderful student because of her persuasive mother.<br><br>She is currently withinside the sixth grade, however we're nonetheless helping her together along with her academics. Due to the truth that maximum youngsters in recent times are fixated on net video games. This has superior to the volume that common college students not take a look at independently. Nonetheless, She is taking pride in gambling video games like Roblox. We will persist in educating her for so long as She needs and is passionate about gaining knowledge.<br>";
+				document.getElementById("picCont").style.backgroundImage = "url('couz.jpg')";
+			}
+			function fish()
+			{
+				document.getElementById("textDes").innerHTML = "<h3>Robin Chris S. Pascua(Uncle)</h3><br><br>My Uncle is like a older brother to me. He is a younger brother of my mother. He always have a cool gadgets when I was a child. He is also an addict in Online games back there. and He Graduated in BPSU main Campus as an ECE Student.<br><br>He is now working in Qatar and every year he take a 1month vacaion here in Philippines. He treat us food during that short amount of time. He spoiled his mother(my grandmother) by taking her to the vacation place such beach. He is also a friend to me since He is playing online games too. and he even bought me a Bike to join his rides.<br><br>He is now engaged with his girlfriend and future wife. I think He'll married her next vacation here in the philippines. the room he built in our house was supposed to be him but I live in that room because he's away from home. but since he will soon to be married I think this room I occupied will now won't be available since it'll be their room.";
+				document.getElementById("picCont").style.backgroundImage = "url('fish.jpg')";
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>MY PLACES</title>
+		
+		<style>
+			*{
+				padding:0px;
+				margin:0px;
+			}
+			.container{
+				display:flex;
+				height:100vh;
+				flex-direction:column;
+			}
+			.header{
+				display:flex;
+				width:100%;
+				height:80px;
+				z-index:1;
+				background-color:;
+				border-radius:0px 0px 10px 10px;
+				box-shadow:0px 0px 15px black;
+			}
+			.content{
+				width:100%;
+				height:100%;
+				display:flex;
+				justify-content:space-evenly;
+				align-items:center;
+			}
+			ul{
+				width:60%;
+				height:100%;
+				display:flex;
+				align-items:center;
+				justify-content:space-evenly;
+				list-style:none;
+			}
+			.title{
+				width:40%;
+				height:100%;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			a{
+				text-decoration:none;
+				color:black;
+			}
+			
+			.content-main-picture{
+				width:300px;
+				height:400px;
+				background-image:url("me.jpg");
+				background-size:cover;
+				border-radius:10px 0px 0px 10px;
+			}
+			
+			@keyframes asd{
+			0%{width:0px;}
+			30%{width:0px;}
+			100%{width:600px;}
+			}
+			
+			@keyframes qwe{
+			0%{width:300px;}
+			30%{width:300px;}
+			100%{width:900px;}
+			}
+			
+			.content-main-description{
+				display:flex;
+				width:600px;
+				height:400px;
+				background-color:#eaeaea;
+				justify-content:center;
+				align-items:center;
+				animation:asd 1.5s ease-out forwards;
+				overflow-Y:scroll;
+				word-wrap:normal;
+				border-radius:0px 10px 10px 0px;
+				box-shadow:-10px 0px 20px #959595 inset;
+			}
+			
+			.content-main-description-sentence{
+				display:flex;
+				width:530px;
+				height:350px;
+				background-color:;
+			}
+			
+			
+			.hover{
+				width:150px;
+				height:50px;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+				border-radius:10px;
+				box-shadow:0px 0px 8px #909090;
+			}
+			.hover:hover{
+				box-shadow:0px 0px 5px #a7a7a7 inset;
+				color:#5a5a5a;
+			}
+			
+			.box{
+				width:200px;
+				height:300px;
+				background-size:cover;
+				border-radius:15px;
+				box-shadow:0px 0px 15px black;
+			}
+			.padding-text{
+				width:100%;
+				height:100%;
+				display:flex;
+				justify-content:center;
+				align-items:center;				
+				border-radius:15px;
+				opacity:0;
+				transition:opacity 1s;
+			}
+			.padding-text:hover{
+				background-color:black;
+				opacity:.8;
+			}
+			
+			.text-trans{
+				color:white;
+				width:180px;
+				height:280px;
+				border-radius:15px;
+				overflow-Y:scroll;
+			}
+			.text-trans::-webkit-scrollbar {
+			  display: none;
+			}
+
+			/* Hide scrollbar for IE, Edge and Firefox */
+			.text-trans {
+			  -ms-overflow-style: none;  /* IE and Edge */
+			  scrollbar-width: none;  /* Firefox */
+			}
+			.box:nth-child(1)
+			{
+				background-image:url("japan.jpg");
+			}
+			.box:nth-child(2)
+			{
+				background-image:url("greece.jpg");
+			}
+			.box:nth-child(3)
+			{
+				background-image:url("paris.jpg");
+			}
+			.box:nth-child(4)
+			{
+				background-image:url("italy.jpeg");
+			}
+			.box:nth-child(5)
+			{
+				background-image:url("iceland.jpg");
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<div class="title"><a href="https://www.facebook.com/2pogiako7">My Places</a></div>
+				<ul>
+					<li><a href="index.html" class="hover">About Me</a></li>
+					<li><a href="family.html" class="hover">My Family</a></li>
+					<li><a href="likes.html" class="hover">My Likes</a></li>
+					<li><a href="friends.html" class="hover">My Friends</a></li>
+					<li><a href="places.html" class="hover">My Place</a></li>
+				</ul>
+			</header>
+			<div class="content">
+				<div class="box"><div class="padding-text"><p class="text-trans"><b>&nbsp;Japan</b><br/>- Japan, located in East Asia, is a country comprised of an archipelago of 14,125 islands in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan, stretching from the Sea of Okhotsk in the north to the East China Sea, Philippine Sea, and Taiwan in the south. The nation is part of the Ring of Fire and its five main islands are Hokkaido, Honshu (known as the "mainland"), Shikoku, Kyushu, and Okinawa. Tokyo, the capital and largest city of Japan, is followed by Yokohama, Osaka, Nagoya, Sapporo, Fukuoka, Kobe, and Kyoto. With a population of approximately 126 million, Japan is the eleventh most populous country in the world, and one of the most densely populated and urbanized nations.<br><br>Approximately 75% of Japan's topography comprises mountains, which has led to a concentration of its population, which is almost 125 million, on narrow coastal plains. There are 47 administrative prefectures and eight traditional regions in Japan. The Greater Tokyo Area is the world's most densely populated metropolitan area, with over 37.2 million inhabitants. Japan has been inhabited since the Upper Paleolithic era, dating back to 30,000 BC, although the first written reference to the archipelago appears in a Chinese chronicle known as the Book of Han, which was completed in the 2nd century AD. Between the 4th and 9th centuries, Japan's kingdoms were unified under an emperor, and the imperial court was established in Heian-kyō.<br><br>Japan is a developed nation and a major power. It holds membership in several global organizations, such as the United Nations, G20, OECD, and the Group of Seven. Its economy is the third-largest worldwide in terms of nominal GDP, and the fourth-largest according to PPP. The country's per capita income ranks 36th globally. Although Japan has renounced its right to declare war, it maintains Self-Defense Forces that are among the most potent military forces globally. Following World War II, Japan witnessed unparalleled growth in an economic marvel and became the world's second-largest economy by 1972. However, it has experienced stagnation since 1995, which is commonly referred to as the Lost Decades.</p></div></div>
+				<div class="box"><div class="padding-text"><p class="text-trans"><b>&nbsp;Greece</b><br/>- The Hellenic Republic, also known as Greece, is a nation located in Southeast Europe. Positioned at the intersection of Europe, Asia, and Africa, it sits on the southernmost point of the Balkan Peninsula. Greece shares borders with Albania to the northwest, North Macedonia and Bulgaria to the north, and Turkey to the northeast. The mainland is flanked by the Ionian Sea to the west and the Aegean Sea to the east, while the Sea of Crete and the Mediterranean Sea lie to the south. Greece boasts the longest coastline in the Mediterranean Basin, with numerous islands dotting its shores.<br><br>The nation is comprised of nine customary geographical areas and has an approximate population of 10.4 million. The capital and most populous city is Athens, followed by Thessaloniki and Patras. Greece is widely known as the origin of Western civilization, having given birth to democracy, Western philosophy, Western literature, historiography, political science, major scientific and mathematical principles, theatre, and the Olympic Games. Since the eighth century BC, the Greeks were divided into various independent city-states, referred to as poleis (singular polis), which extended throughout the Mediterranean and the Black Sea. In the fourth century BC, Philip II of Macedon brought together most of present-day Greece, and his son Alexander the Great quickly conquered much of the ancient world, from the eastern Mediterranean to the North Western parts of India. The ensuing Hellenistic era marked the peak of Greek culture and influence in antiquity.<br><br>Greece is a developed country with a unitary parliamentary republic system, boasting an advanced high-income economy and exceptional quality of life. It has one of the largest economies in the Balkans and is a significant regional investor. Greece is a founding member of the United Nations and was the tenth country to join the precursor to the European Union, the European Communities. Since 2001, it has been a member of the Eurozone and is part of many other international organizations, including the Council of Europe, NATO, the OECD, the WTO, and the OSCE. Greece is renowned for its unique cultural heritage, a thriving tourism industry, and a prominent shipping sector.</p></div></div>
+				<div class="box"><div class="padding-text"><p class="text-trans"><b>&nbsp;Paris</b><br/>- The City of Paris serves as the hub of the Île-de-France region, also known as Paris Region, and has an officially estimated population of 12,271,794 residents as of January 1, 2023, accounting for approximately 19% of France's population. As a result, the region is considered to be France's leading city. In 2019, the Paris Region recorded a GDP of €739 billion ($743 billion), the highest in Europe. According to the 2022 Economist Intelligence Unit Worldwide Cost of Living Survey, Paris was ranked as the ninth most expensive city globally. Paris is a crucial transportation hub for railways, highways, and air travel, with two international airports, namely Charles de Gaulle Airport (which is the second busiest airport in Europe) and Orly Airport.<br><br>The city of Paris is renowned for its museums and architectural masterpieces. The Louvre welcomed 7.8 million visitors in 2022, securing its status as the world's most popular art museum. The Musée d'Orsay, Musée Marmottan Monet, and Musée de l'Orangerie are celebrated for their collections of French Impressionist art. The Pompidou Centre's Musée National d'Art Moderne boasts the most extensive collection of modern and contemporary art in Europe, alongside the Musée Rodin and Musée Picasso. The city center's historical district along the Seine has been recognized as a UNESCO World Heritage Site since 1991, with popular landmarks such as the Cathedral of Notre Dame de Paris on the Île de la Cité, which is currently closed for renovation after the 15 April 2019 fire. Other must-see tourist destinations include the Gothic royal chapel of Sainte-Chapelle, situated on the Île de la Cité; the Eiffel Tower, built for the Paris Universal Exposition of 1889; the Grand Palais and Petit Palais, constructed for the Paris Universal Exposition of 1900; the Arc de Triomphe on the Champs-Élysées, and the hill of Montmartre with its rich artistic history and the Basilica of Sacré-Coeur.<br><br>In 2019, the Paris metropolis, which encompasses Paris and its adjacent three departments, witnessed a record-breaking 38 million visitors, as per the count of hotel arrivals. This number included 12.2 million French tourists. Among the foreign visitors, the majority came from the United States (2.6 million), the United Kingdom (1.2 million), Germany (981 thousand), and China (711 thousand). However, due to the COVID-19 pandemic, tourism to Paris and its surroundings declined drastically in 2020, with only 17.5 million visitors recorded. This included a 78 percent decline in foreign tourists, measured through hotel stays, and a 56 percent decrease in French guests, resulting in an overall decline of 68 percent.</p></div></div>
+				<div class="box"><div class="padding-text"><p class="text-trans"><b>&nbsp;Italy</b><br/>- The Italian Republic, also known as Italy, is a nation found in the Western and Southern parts of Europe. It is situated in the heart of the Mediterranean Sea and encompasses a peninsula that is surrounded by a number of islands. Its geographical region is named after the country itself. Italy shares its borders with Switzerland, France, Slovenia, Austria, as well as the microstates of Vatican City and San Marino. It has an exclave located in Switzerland called Campione, as well as a few islands in the African Plate. The total area covered by Italy is 301,230 km2 (116,310 sq mi) and it has a population of approximately 60 million people.<br><br>It is the third-most densely populated member state of the European Union, the sixth-most crowded nation in Europe, and the tenth-largest nation in the continent by land area. The capital and largest city of Italy is Rome. Italy was the birthplace of civilizations such as the Italic peoples and the Etruscans, while due to its central geographic location in Southern Europe and the Mediterranean, the nation has also historically been home to numerous peoples and cultures, who migrated to the peninsula throughout history. The Latins, who were native to central Italy, established the Roman Kingdom in the 8th century BC, which eventually became a republic with a government of the Senate and the People.<br><br>During the previous ten years, Italy has emerged as a key player in generating sustainable energy, securing fourth place globally in terms of installed solar energy capacity and sixth place in wind power capacity in 2010. In 2020, renewable energy accounted for around 37% of Italy's energy consumption. Despite these advancements, air pollution continues to pose a significant challenge, particularly in the industrialized north, where Italy ranked tenth worldwide for industrial carbon dioxide emissions during the 1990s. Presently, Italy stands as the twelfth-largest producer of carbon dioxide.</p></div></div>
+				<div class="box"><div class="padding-text"><p class="text-trans"><b>&nbsp;Ice Land</b><br/>- </p></div></div>
+			</div>
+		</div>
+	</body>
+</html>

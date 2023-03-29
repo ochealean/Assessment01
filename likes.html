@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>MY LIKES</title>
+		
+		<style>
+			*{
+				padding:0px;
+				margin:0px;
+			}
+			.container{
+				display:flex;
+				height:100vh;
+				flex-direction:column;
+			}
+			.header{
+				display:flex;
+				width:100%;
+				height:160px;
+				z-index:1;
+				background-color:;
+				border-radius:0px 0px 10px 10px;
+				box-shadow:0px 0px 15px black;
+			}
+			.content{
+				width:100%;
+				height:100%;
+				display:flex;
+				justify-content:space-evenly;
+				align-items:center;
+			}
+			ul{
+				width:60%;
+				height:100%;
+				display:flex;
+				align-items:center;
+				justify-content:space-evenly;
+				list-style:none;
+			}
+			.title{
+				width:40%;
+				height:100%;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			a{
+				text-decoration:none;
+				color:black;
+			}
+			
+			.content-main-picture{
+				width:300px;
+				height:400px;
+				background-image:url("me.jpg");
+				background-size:cover;
+				border-radius:10px 0px 0px 10px;
+			}
+			
+			@keyframes asd{
+			0%{width:0px;}
+			30%{width:0px;}
+			100%{width:600px;}
+			}
+			
+			@keyframes qwe{
+			0%{width:300px;}
+			30%{width:300px;}
+			100%{width:900px;}
+			}
+			
+			.content-main-description{
+				display:flex;
+				width:600px;
+				height:400px;
+				background-color:#eaeaea;
+				justify-content:center;
+				align-items:center;
+				animation:asd 1.5s ease-out forwards;
+				overflow-Y:scroll;
+				word-wrap:normal;
+				border-radius:0px 10px 10px 0px;
+				box-shadow:-10px 0px 20px #959595 inset;
+			}
+			
+			.content-main-description-sentence{
+				display:flex;
+				width:530px;
+				height:350px;
+				background-color:;
+			}
+			
+			
+			.hover{
+				width:150px;
+				height:50px;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+				border-radius:10px;
+				box-shadow:0px 0px 8px #909090;
+			}
+			.hover:hover{
+				box-shadow:0px 0px 5px #a7a7a7 inset;
+				color:#5a5a5a;
+			}
+			
+			.box{
+				width:200px;
+				height:300px;
+				background-size:cover;
+				border-radius:15px;
+				box-shadow:0px 0px 15px black;
+			}
+			.box1{
+				width:200px;
+				height:300px;
+				background-size:cover;
+				border-radius:15px;
+				box-shadow:0px 0px 15px black;
+			}
+			.padding-text{
+				width:100%;
+				height:100%;
+				display:flex;
+				justify-content:center;
+				align-items:center;				
+				border-radius:15px;
+				opacity:0;
+				transition:opacity 1s;
+			}
+			.padding-text:hover{
+				background-color:black;
+			}
+			.padding-text:hover{
+				opacity:.8;
+			}
+			.text-trans{
+				color:white;
+				width:180px;
+				height:280px;
+				border-radius:15px;
+			}
+			.box:nth-child(1)
+			{
+				background-image:url("op.jpeg");
+			}
+			.box:nth-child(2)
+			{
+				background-image:url("ds.jpg");
+			}
+			.box:nth-child(3)
+			{
+				background-image:url("sl.jpg");
+			}
+			.box:nth-child(4)
+			{
+				background-image:url("bc.jpg");
+			}
+			.box:nth-child(5)
+			{
+				background-image:url("tr.jpg");
+			}
+			.box1:nth-child(1)
+			{
+				background-image:url("bng.jpg");
+			}
+			.box1:nth-child(2)
+			{
+				background-image:url("ns.jpg");
+			}
+			.box1:nth-child(3)
+			{
+				background-image:url("opm.jpg");
+			}
+			.box1:nth-child(4)
+			{
+				background-image:url("hxh.jpg");
+			}
+			.box1:nth-child(5)
+			{
+				background-image:url("jk.jpg");
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<div class="title"><a href="https://www.facebook.com/2pogiako7">My Likes</a></div>
+				<ul>
+					<li><a href="index.html" class="hover">About Me</a></li>
+					<li><a href="family.html" class="hover">My Family</a></li>
+					<li><a href="likes.html" class="hover">My Likes</a></li>
+					<li><a href="friends.html" class="hover">My Friends</a></li>
+					<li><a href="places.html" class="hover">My Place</a></li>
+				</ul>
+			</header>
+			<div class="content">
+				<div class="box"><div class="padding-text"><p class="text-trans"><b>One Piece</b><br/><br/>-  The Protagonist name is Monkey D. Luffy who has a dream to become a Pirate king and obtain the One piece. But the in his journey he will encounter a formidable enemies that stronger than him and makes him adapt and become more powerful after he defeat the enemy along the way.</p></div></div>
+				<div class="box"><div class="padding-text"><p class="text-trans"><b>Demon Slayer</b><br/><br/>- The Protagonist name is Tanjiro Kamado. one day his family slaugthered by demons and turn his suster into demon. in order to save his sister he planned get stronger and planned to kill the demon king.</p></div></div>
+				<div class="box"><div class="padding-text"><p class="text-trans"><b>Solo Leveling</b><br/><br/>- The Protagonist name is Sung Jin-woo who is the weakest E-rank hunter. but after incident he recieve an ability to grow that no one hunter ever had and he became successfully growing to the point that he is much stronger than S-rank hunter.</p></div></div>
+				<div class="box"><div class="padding-text"><p class="text-trans"><b>Black Clover</b><br/><br/>- The Protagonist name is Asta who has a desire to be a Wizard king someday even if he's magicless peasant. he continuosly exercise to gain physical power.</p></div></div>
+				<div class="box"><div class="padding-text"><p class="text-trans"><b>Tokyo Revengers</b><br/><br/>- The Protagonist name is Takemichi Hanagaki is a time leaper who continuosly altered the past in order to save his girlfriend and his friends.</p></div></div>
+			</div>
+			<div class="content">
+				<div class="box1"><div class="padding-text"><p class="text-trans"><b>Boruto Next Generation</b><br/><br/>-  The Protagonist name is Uzumaki Boruto. He is a vessel of Otsutsuki Momoshiki a God that has a desired to take over the body of Boruto and devour the life of earth.</p></div></div>
+				<div class="box1"><div class="padding-text"><p class="text-trans"><b>Naruto Shippuden</b><br/><br/>- The Protagonist name is Uzumaki Naruto. He has a powerful power that comes from the monster fox inside of him that once destroy the village he live in.</p></div></div>
+				<div class="box1"><div class="padding-text"><p class="text-trans"><b>One Punch Man</b><br/><br/>- The Protagonist name is Saitama. He is the most powerful being in the Series but no one knows that he is strong exept his student.</p></div></div>
+				<div class="box1"><div class="padding-text"><p class="text-trans"><b>Hunter X Hunter</b><br/><br/>- It is about the Boy who becomes a hunter to find his Hunter father.</p></div></div>
+				<div class="box1"><div class="padding-text"><p class="text-trans"><b>Jujutsu Kaisen</b><br/><br/>- The Protagonist name is Itadori Yuuji. he is a vessel of Sukuna the king of curses. but sukuna even he's powerful he cannot control over Itadori's body</p></div></div>
+			</div>
+		</div>
+	</body>
+</html>
